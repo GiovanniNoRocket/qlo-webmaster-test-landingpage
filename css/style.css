@@ -1,5 +1,6 @@
 @import url(./base/variables.css);
 @import url(./components/hero.css);
+@import url(./components/features.css);
 @import url(./layout/header.css );
 
 body {
