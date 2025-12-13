@@ -1,0 +1,117 @@
+.faq {
+  padding: 6rem 0;
+  background-color: var(--white);
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.faq-header p {
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+.faq-list {
+  line-height: 1.45;
+  align-items: center;
+  padding: 0 0 2.5rem;
+}
+
+.faq-list details {
+  border-color: var(--dark);
+  border: 1px solid #e5e7eb;
+  margin-top: 1rem;
+  padding: var(--space-sm);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.faq-list details:last-child {
+  border-bottom: none;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--primary-dark);
+  list-style: none;
+  position: relative;
+  display: flex;
+}
+
+.faq-list details:hover {
+  background: var(--light);
+  border-left: 3px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.faq-list details:hover summary {
+  color: var(--primary);
+}
+
+.faq-list summary::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: var(--accent);
+  transition: transform 0.6s;
+}
+
+.faq-list details p {
+  padding-top: 1rem;
+  color: #4b5563;
+  opacity: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-list details[open] {
+  box-shadow: var(--shadow-md);
+  border-left: 3px solid var(--primary);
+  background-color: rgba(255, 255, 255, 0.05);
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.faq-list details[open] p {
+  max-height: 500px;
+  overflow: visible;
+  animation: slideDown 0.5s ease-out;
+}
+
+.faq-list details[open] summary::after {
+  content: "▼";
+  transform: rotate(90deg);
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+.faq-illustration {
+  padding: 0 var(--space-lg) 0;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-illustration img,
+.faq-illustration svg {
+  max-width: 80%;
+  height: auto;
+  background: var(--gray-light);
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-lg);
+}
