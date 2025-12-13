@@ -193,3 +193,13 @@
 .checkbox-label a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

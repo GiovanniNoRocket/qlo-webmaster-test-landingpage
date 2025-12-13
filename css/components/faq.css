@@ -102,10 +102,11 @@
 }
 
 .faq-illustration {
-  padding: 0 var(--space-lg) 0;
+  padding: 0;
   display: flex;
   justify-content: center;
 }
+
 
 .faq-illustration img,
 .faq-illustration svg {
@@ -114,4 +115,31 @@
   background: var(--gray-light);
   box-shadow: var(--shadow-lg);
   border-radius: var(--radius-lg);
+}
+
+@media screen and (max-width: 768px) {
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-list {
+    order: 2;
+  }
+
+  .faq-illustration {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .faq-illustration {
+    padding: 0 var(--space-lg) 0;
+  }
+
+  .faq-illustration svg {
+    max-width: 50%;
+  }
 }

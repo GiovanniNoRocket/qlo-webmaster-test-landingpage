@@ -26,17 +26,20 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="navbar">
-          <a href="#" class="logo">
-            <i class="fas fa-scale-balanced"></i>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+          <a href="#" class="logo" aria-label="Legal Shield Home">
+            <i class="fas fa-scale-balanced" aria-hidden="true"></i>
             <span> Legal Shield</span>
           </a>
-          <ul class="nav-menu">
-            <li><a href="#features">Services</a></li>
-            <li><a href="#faq">Frequently questions</a></li>
-            <li><a href="#testimonials">Success Stories</a></li>
-            <li><a href="#contact" class="btn-nav">Free Consultation</a></li>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#features" aria-label="Our Services">Services</a></li>
+            <li><a href="#faq" aria-label="Frequently asked questions">Frequently questions</a></li>
+            <li><a href="#testimonials" aria-label="Success stories from clients">Success Stories</a></li>
+            <li><a href="#contact" class="btn-nav" aria-label="Contact us for a free consultation">Free Consultation</a></li>
           </ul>
+          <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </div>
         </nav>
       </div>
     </header>
@@ -545,6 +548,7 @@
       </ul>
     </footer>
 
+    <script src="js/navigation.js"></script>
     <script src="js/contact-form.js"></script>
   </body>
 </html>
