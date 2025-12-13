@@ -1,0 +1,48 @@
+:root {
+  --primary-200: #6391ca;
+  --primary: #2c5282;
+  --secondary: #2d3748;
+  --accent: #f89323;
+  --accent-light: #fcb86d;
+  --light: #f7fafc;
+  --dark: #1a202c;
+  --gray: #718096;
+  --white: #ffffff;
+
+  --font-heading: "Merriweather", Georgia, serif;
+  --font-body: "Open Sans", Arial, sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--light);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
