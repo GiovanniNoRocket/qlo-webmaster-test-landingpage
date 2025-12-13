@@ -426,38 +426,116 @@
           </div>
         </div>
       </section>
-      <!--
       <section class="contact" id="contact">
-        <form action="#" method="post">
-          <div>
-            <label for="name">Text Input:</label>
-            <input type="text" name="name" id="name" value="" tabindex="1" />
-          </div>
-          <div>
-            <label for="name">Text Input:</label>
-            <input type="text" name="name" id="name" value="" tabindex="2" />
-          </div>
+        <div class="container">
+          <header class="section-header">
+            <h2 class="section-title">Free Case Evaluation</h2>
+            <p class="section-subtitle">
+              Contact us today for a free, confidential consultation about your immigration case.
+            </p>
+          </header>
 
-          <div>
-            <label for="textarea">Textarea:</label>
-            <textarea
-              cols="40"
-              rows="8"
-              name="textarea"
-              id="textarea"
-            ></textarea>
-          </div>
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <h3>Why Choose Legal Shield?</h3>
+              <ul class="contact-features">
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h4>Free Initial Consultation</h4>
+                    <p>Get expert advice without any upfront cost</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h4>Direct Attorney Access</h4>
+                    <p>Speak with experienced immigration lawyers</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h4>Confidential & Secure</h4>
+                    <p>Your information is protected at all times</p>
+                  </div>
+                </li>
+              </ul>
 
-          <div>
-            <label for="checkbox">Checkbox:</label>
-            <input type="checkbox" name="checkbox" id="checkbox" />
-          </div>
+              <div class="contact-highlights">
+                <div class="highlight-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <p>Call us: (555) 123-4567</p>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-clock"></i>
+                  <p>Available 24/7 emergencies</p>
+                </div>
+              </div>
+            </div>
 
-          <div>
-            <input type="submit" value="Submit" />
+            <div class="contact-form">
+              <form id="leadCaptureForm" class="form">
+                <div class="form-group">
+                  <label for="fullName">Full Name *</label>
+                  <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="caseType">Case Type</label>
+                  <select id="caseType" name="caseType">
+                    <option value="">Select your case type</option>
+                    <option value="green-card">Green Card Application</option>
+                    <option value="citizenship">Citizenship/Naturalization</option>
+                    <option value="asylum">Asylum</option>
+                    <option value="deportation">Deportation Defense</option>
+                    <option value="visa">Visa Issues</option>
+                    <option value="other">Other Immigration Matter</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Tell Us About Your Situation *</label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Please describe your immigration situation or case details..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="privacyConsent" name="privacyConsent">
+                    <span class="checkmark"></span>
+                    I agree to the <a href="#" target="_blank">privacy policy</a> and consent to receive communication from Legal Shield.
+                  </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="termsConsent" name="termsConsent">
+                    <span class="checkmark"></span>
+                    I agree to the <a href="#" target="_blank">terms of service</a> and understand this is a free consultation only.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                  <i class="fas fa-paper-plane"></i>
+                  Submit for Free Consultation
+                </button>
+              </form>
+            </div>
           </div>
-        </form>
-      </section>-->
+        </div>
+      </section>
     </main>
     <footer>
       <ul>
@@ -466,5 +544,7 @@
         <li>Vestibulum auctor dapibus neque.</li>
       </ul>
     </footer>
+
+    <script src="js/contact-form.js"></script>
   </body>
 </html>
