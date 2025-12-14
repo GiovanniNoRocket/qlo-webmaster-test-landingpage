@@ -9,6 +9,10 @@
     <title>
       Emergency Immigration Assistance – Deportation Defense & Legal Guidance
     </title>
+    <link
+      rel="icon"
+      href="assets/icons/favicon.ico"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -73,13 +77,18 @@
             <div class="hero-image">
               <div class="image-container">
                 <div class="image-placeholder">
-                  <img
-                    src="assets/images/hero_image.webp"
-                    alt="Professional immigration law team providing trusted legal services in the United States"
-                    title="Certified Immigration Law Team"
-                    loading="lazy"
-                    class="hero-img"
-                  />
+                  <picture class="hero-img">
+                    <source media="(max-width: 768px)" srcset="assets/images/hero_image_720.webp">
+                    <source media="(max-width: 1024px)" srcset="assets/images/hero_image_1k.webp">
+                    <source media="(max-width: 2048px)" srcset="assets/images/hero_image_2k.webp">
+                    <img
+                      src="assets/images/hero_image_4k.webp"
+                      alt="Professional immigration law team providing trusted legal services in the United States"
+                      title="Certified Immigration Law Team"
+                      loading="lazy"
+                      class="hero-img"
+                    />
+                  </picture>
 
                   <div class="floating-badge trust-badge">
                     <i class="fas fa-award"></i>
