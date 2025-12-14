@@ -31,6 +31,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  contain: layout style;
 }
 
 .benefit-card:hover {
@@ -45,6 +46,7 @@
   background: var(--light);
   padding: 1rem;
   border-radius: var(--radius-full);
+  flex-shrink: 0;
 }
 
 .benefit-card p {

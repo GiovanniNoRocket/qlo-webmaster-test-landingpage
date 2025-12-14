@@ -115,6 +115,7 @@
   background: var(--gray-light);
   box-shadow: var(--shadow-lg);
   border-radius: var(--radius-lg);
+  contain: layout style;
 }
 
 @media screen and (max-width: 768px) {

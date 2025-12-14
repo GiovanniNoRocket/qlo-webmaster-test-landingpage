@@ -18,6 +18,8 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  contain: layout style;
+  min-height: 280px;
 }
 
 .testimonial-card:hover {
@@ -46,46 +48,12 @@
 .testimonial-avatar {
   font-size: 2rem;
   color: var(--accent);
+  flex-shrink: 0;
 }
 
 .testimonial-rating {
   color: var(--accent);
-}
-
-.testimonial-content {
-  margin-bottom: var(--space-md);
-  position: relative;
-  z-index: 2;
-}
-
-.testimonial-content p {
-  font-style: italic;
-  color: var(--dark);
-  line-height: 1.6;
-}
-
-.testimonial-author {
-  padding-top: var(--space-sm);
-  border-top: 1px solid var(--light);
-}
-
-.testimonial-author h4 {
-  margin: 0 0 0.25rem 0;
-  color: var(--primary);
-  font-size: 1.1rem;
-}
-
-.testimonial-author span {
-  font-size: 0.9rem;
-  color: var(--gray);
-}
-
-.testimonials-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-lg);
-  margin: var(--space-xl) 0;
-  text-align: center;
+  flex-shrink: 0;
 }
 
 .stat-card {
@@ -94,6 +62,8 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
+  contain: layout style;
+  min-height: 140px;
 }
 
 .stat-card:hover {

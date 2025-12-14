@@ -80,6 +80,7 @@
   background: var(--light);
   padding: var(--space-lg);
   border-radius: var(--radius-lg);
+  contain: layout style;
 }
 
 .form {
@@ -98,6 +99,7 @@
   font-weight: 600;
   color: var(--dark);
   font-size: 0.95rem;
+}
 }
 
 .form-group input,
