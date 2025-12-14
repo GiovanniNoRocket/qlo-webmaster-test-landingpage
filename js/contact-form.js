@@ -1,23 +1,26 @@
-document.getElementById('leadCaptureForm').addEventListener('submit', function(e) {
-  const fullName = document.getElementById('fullName').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const privacyConsent = document.getElementById('privacyConsent').checked;
-  const termsConsent = document.getElementById('termsConsent').checked;
+document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('submit', function(e) {
+    if (e.target.id === 'leadCaptureForm') {
+      e.preventDefault();
 
-  if (!fullName || !email || !phone) {
-    e.preventDefault();
-    alert('Please fill in all required fields (Full Name, Email, and Phone are required).');
-    return;
-  }
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const privacyConsent = document.getElementById('privacyConsent').checked;
+      const termsConsent = document.getElementById('termsConsent').checked;
 
-  if (!privacyConsent || !termsConsent) {
-    e.preventDefault();
-    alert('Please agree to the privacy policy and terms of service to proceed.');
-    return;
-  }
+      if (!fullName || !email || !phone) {
+        alert('Please fill in all required fields (Full Name, Email, and Phone are required).');
+        return;
+      }
 
-  e.preventDefault();
-  alert(`Thank you, ${fullName}! Your information has been submitted. A Legal Shield attorney will contact you shortly at ${email} or ${phone}.`);
-  this.reset();
+      if (!privacyConsent || !termsConsent) {
+        alert('Please agree to the privacy policy and terms of service to proceed.');
+        return;
+      }
+
+      alert(`Thank you, ${fullName}! Your information has been submitted. A Legal Shield attorney will contact you shortly at ${email} or ${phone}.`);
+      e.target.reset();
+    }
+  });
 });

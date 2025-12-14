@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lenguage="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -9,22 +9,25 @@
     <title>
       Emergency Immigration Assistance – Deportation Defense & Legal Guidance
     </title>
-    <link
-      rel="icon"
-      href="assets/icons/favicon.ico"
-    />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
+    
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    </noscript>
+
+    <link rel="icon" href="assets/icons/favicon.ico" />
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   </head>
 
   <body>
@@ -78,14 +81,17 @@
               <div class="image-container">
                 <div class="image-placeholder">
                   <picture class="hero-img">
-                    <source media="(max-width: 768px)" srcset="assets/images/hero_image_720.webp">
-                    <source media="(max-width: 1024px)" srcset="assets/images/hero_image_1k.webp">
-                    <source media="(max-width: 2048px)" srcset="assets/images/hero_image_2k.webp">
+                    <source media="(max-width: 768px)" sizes="800px" srcset="assets/images/hero_image_720.webp 800w">
+                    <source media="(max-width: 1024px)" sizes="1500px" srcset="assets/images/hero_image_1k.webp 1500w">
+                    <source media="(max-width: 2048px)" sizes="2256px" srcset="assets/images/hero_image_2k.webp 2256w">
                     <img
+                      width="5000"
+                      height="3337"
                       src="assets/images/hero_image_4k.webp"
                       alt="Professional immigration law team providing trusted legal services in the United States"
                       title="Certified Immigration Law Team"
-                      loading="lazy"
+                      fetchpriority="high"
+                      loading="eager"
                       class="hero-img"
                     />
                   </picture>
@@ -557,7 +563,7 @@
       </ul>
     </footer>
 
-    <script src="js/navigation.js"></script>
-    <script src="js/contact-form.js"></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/contact-form.js" defer></script>
   </body>
 </html>

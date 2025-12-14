@@ -30,6 +30,11 @@
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
+.fonts-loaded * {
+  animation: none !important;
+  transition: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
