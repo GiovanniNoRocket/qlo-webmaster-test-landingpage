@@ -84,6 +84,20 @@
   font-weight: 500;
 }
 
+.testimonials-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
 .testimonials-media {
   text-align: center;
   margin-top: var(--space-xl);
