@@ -22,6 +22,6 @@ Next is the palette. Usually this part requires a defined identity of the web pa
 > In the code, we use this as a base, but the color can be quite different.
 
 ### Reason
-The blue color helps transmit trust, and its tonality looks very professional, making it suitable for the main elements of the interface. The secondary color provides visual stability and helps maintain consistency across different sections of the page, improving readability and structure.
-
-The accent color is used to attract the user’s attention and highlight important actions or key information.
+- The blue color helps transmit trust, and its tonality looks very professional, making it suitable for the main elements of the interface.
+- The secondary color provides visual stability and helps maintain consistency across different sections of the page.
+- The accent color is used to attract the user’s attention and highlight important actions or key information.
