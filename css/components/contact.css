@@ -136,7 +136,7 @@
 
 .checkbox-label {
   position: relative;
-  padding-left: 28px;
+  padding-left: var(--space-md);
   font-weight: normal;
   cursor: pointer;
   line-height: 1.5;
@@ -146,20 +146,20 @@
 .checkbox-label input {
   position: absolute;
   left: 0;
-  top: 2px;
+  top: var(--space-xxs);
   opacity: 0;
-  height: 18px;
-  width: 18px;
+  height: var(--space-md);
+  width: var(--space-md);
 }
 
 .checkmark {
   position: absolute;
   left: 0;
-  top: 2px;
+  top: var(--space-xxs);
   display: inline-block;
-  width: 18px;
-  height: 18px;
-  border: 2px solid var(--gray);
+  width: var(--space-md);
+  height: var(--space-md);
+  border: var(--space-xxs) solid var(--gray);
   border-radius: var(--radius-sm);
 }
 

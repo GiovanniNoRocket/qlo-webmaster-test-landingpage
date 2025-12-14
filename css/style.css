@@ -15,7 +15,7 @@ body {
     color: var(--dark);
     background-color: var(--white);
     overflow-x: hidden;
-    padding-top: 70px;
+    padding-top: var(--space-lg);
     -webkit-text-size-adjust: 100%;
 }
 

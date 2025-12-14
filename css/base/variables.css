@@ -14,11 +14,15 @@
   --font-heading: "Merriweather", Georgia, serif;
   --font-body: "Open Sans", Arial, sans-serif;
 
+  --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
+  --space-xsm: 0.75rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
+  --space-xm: 1.75rem;
   --space-lg: 2rem;
   --space-xl: 3rem;
+  --spce-xxl: 4rem;
 
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -85,7 +89,7 @@ body {
 .section-title {
   font-family: var(--font-heading);
   font-size: clamp(2.2rem, 4vw, 2.8rem);
-  margin-bottom: 16px;
+  margin-bottom: var(--space-md);
   color: var(--primary-dark);
 }
 .section-subtitle {

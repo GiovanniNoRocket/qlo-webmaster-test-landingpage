@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://giovanninorocket.github.io/qlo-webmaster-test-landingpage/sitemap.xml
